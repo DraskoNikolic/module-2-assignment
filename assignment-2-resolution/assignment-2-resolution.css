@@ -1,0 +1,107 @@
+*{box-sizing: border-box;
+  font-family: verdana;
+}
+body{ margin:0px;}
+
+
+h1{text-align:center;
+  font-size:32px;    /* 75% bigger than the text font-size */
+}
+
+p{position:relative;
+  color:black;
+  text-align:left;
+  word-wrap: break-word;
+  background-color: #fff0b3;
+  height:200px;
+  width:100%;
+  border: 1px solid black;
+  overflow:hidden;
+  padding-top: 50px;
+  padding-left: 3%;
+  padding-right:3%;
+  font-size: 18px;
+  /* overflow: overlay; If the amount of text is larger than a div */
+
+}
+kbd{position:absolute;
+  border:1px solid black;
+  top:0px;
+  right:0px;
+  float:right;
+  height:25%;
+  width:100px;
+  text-align: center;
+  line-height: 200%;  /* just for one line of text*/
+  font-size:23px;} /* 25% bigger than text font-size*/
+
+.row{
+    width: 100%;
+    margin: 0px;}
+
+.fruits{
+    background-color: #ff80ff;
+    color:white;}
+.vegies{ background-color:#004d00;
+    color:white;}
+.nuts{background-color: #bf8040;
+      color:black;}
+
+
+
+@media  (min-width:992px){.box , .box2, .box3{
+        float:left;}
+
+      .box{
+        width:31%;
+        margin: 2% 1% 2% 2%;
+      }
+
+      .box2{
+        width:31%;
+        margin: 2% 1% 2% 1%;
+      }
+
+      .box3{
+        width:31%;
+        margin: 2% 2% 2% 0%;
+      }
+      /*I am making .box2 and .box3, because on the module-assignment mockup, you could see
+      that there is difference in margins between box 1(chicken),box 2(beef) and  box 2(beef)box 3(Sushi).*/
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {.mid-box,.mid-box2, .mid-box3
+      {
+        float:left;
+      }
+
+      .mid-box{ width:44%;
+        margin-right: 2%;
+        margin-left:4%;
+      }
+
+      .mid-box2{width:44%;
+        margin-right:4%;
+        margin-left:2%;
+      }
+
+      .mid-box3{
+        clear: left;
+        width:92%;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: 5px;
+      }
+
+    }
+
+    @media(max-width:767px){.sm-box{
+      /* It seems,in the mockup, that the right margin is smaller than left one, so I will make it look like that*/
+      float:left;
+    }
+    .sm-box{width: 90%;
+      margin-left: 6%;
+      margin-right:4%;
+      margin-top:10px;
+    }
+  }
