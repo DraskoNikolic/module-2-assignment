@@ -7,7 +7,9 @@ body{ margin:0px;}
 h1{text-align:center;
   font-size:32px;    /* 75% bigger than the text font-size */
 }
-
+section{display: block;}
+#one{position:relative;
+}
 p{position:relative;
   color:black;
   text-align:left;
@@ -18,10 +20,12 @@ p{position:relative;
   border: 1px solid black;
   overflow:hidden;
   padding-top: 50px;
+  padding-bottom: 20px;
   padding-left: 3%;
   padding-right:3%;
+
   font-size: 18px;
-  /* overflow: overlay; If the amount of text is larger than a div */
+  overflow:scroll; /*amount of text is larger than a div */
 
 }
 kbd{position:absolute;
